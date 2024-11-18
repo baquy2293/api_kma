@@ -1,0 +1,25 @@
+{
+  "name": "kma-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "netlify-lambda install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Haven-Code/KMA-API.git"
+  },
+  "author": "Dang Phuc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Haven-Code/KMA-API/issues"
+  },
+  "homepage": "https://github.com/Haven-Code/KMA-API#readme",
+  "dependencies": {
+    "cmcsoft-iu": "git+https://github.com/phuchptty/CMCSoft-IU.git",
+    "netlify-cli": "^2.59.1",
+    "netlify-lambda": "^2.0.1"
+  }
+}

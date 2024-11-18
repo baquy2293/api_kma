@@ -1,0 +1,26 @@
+[build]
+  command = "npm run build"
+  functions = "./src/functions"
+  NODE_ENV = "12"
+  publish = "dist"
+
+[dev]
+  port = 8080
+  targetPort = 3000
+  publish = "/dist"
+  command = "npm run dev"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Headers = "Origin, X-Requested-With, Content-Type, Accept"
+    Access-Control-Allow-Methods = "GET,POST,OPTIONS,DELETE,PUT"
+    Access-Control-Allow-Origin = "*"
+    Access-Control-Allow-Credentials = true
+    Access-Control-Max-Age = "3600"
+    Content-Type = "text/plain"

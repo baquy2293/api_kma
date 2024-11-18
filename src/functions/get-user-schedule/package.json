@@ -1,0 +1,15 @@
+{
+  "name": "get-user-schedule",
+  "version": "1.0.0",
+  "description": "",
+  "main": "get-user-schedule.js",
+  "dependencies": {
+    "cmcsoft-iu": "git+https://github.com/phuchptty/CMCSoft-IU.git"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC"
+}
